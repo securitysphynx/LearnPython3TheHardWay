@@ -1,4 +1,4 @@
-# 11, 14, 16, and 19 have errors.  To be fixed. 
+# 16, 17, 19 have errors.  To be fixed. 
 
 print("""
 \t\tGood Tips: 
@@ -76,9 +76,7 @@ print("""\t1 != 0 is TRUE.
 
 print(line_break)
 print("""11. test != testing""")
-print("""\t1 != 0 is TRUE.
-\t2 == 1 is FALSE.
-\tTRUE and FALSE is FALSE.
+print("""\ttest != testing is TRUE. 
 \tThis is: """, ('test' != 'testing'))
 
 print(line_break)
@@ -95,9 +93,9 @@ print("""\tTRUE and FALSE is FALSE.
 print(line_break)
 print("14. not (1 == 1 and 0 != 1): ")
 print("""\t1 == 1 is TRUE. 
-\t 0 != 1 is FALSE. 
-\tTRUE and FALSE is FALSE. 
-\tnot FALSE is TRUE.
+\t 0 != 1 is TRUE. 
+\tTRUE and TRUE is TRUE. 
+\tnot TRUE is FALSE.
 \tThis is :""", not (1 == 1 and 0 != 1))
 
 print(line_break)
@@ -110,16 +108,19 @@ print("""\t10 == 1 is FALSE.
 
 print(line_break)
 print("16. not (1 != 10 or 3 == 4): ")
-print("""\t1 != 0 is TRUE.
+print("""\t1 != 10 is TRUE.
 \t3 == 4 is FALSE. 
 \tTRUE or FALSE is TRUE.
+\not TRUE is FALSE. 
 \tThis is: """, (not (1 != 10 or 3 == 4)))
 
+#Incorrect
 print(line_break)
 print('17. not ("testing" == "testing" and "Zed" ==  "Cool Guy"): ')
 print("""\ttesting == testing is TRUE.
 \tZed == Cool Guy is FALSE. 
 \tTRUE and FALSE are FALSE.
+\tnot FALSE is TRUE. 
 \tThis is: """, ( not ("testing" == "testing" and "Zed" ==  "Cool Guy")))
 
 print(line_break)
@@ -139,7 +140,7 @@ print("""\t3 == 4 is FALSE.
 \tFALSE or TRUE is TRUE.
 \tnot TRUE is FALSE.
 \tchunky == bacon is FALSE.
-\tFALSE and FALSE is TRUE.
+\tFALSE and FALSE is FALSE.
 \tThis is: """, ("chunky" == "bacon" and (not (3 == 4 or 3 == 3))))
 
 print(line_break)
@@ -149,5 +150,5 @@ print("""\ttesting == testing is TRUE.
 \tTRUE or FALSE equals TRUE. 
 \tnot TRUE equals FALSE. 
 \t3 ==3 is TRUE. 
-\tTRUE and FALSE equals FALSE.  
+\tTRUE and FALSE is FALSE.  
 \tThis is: """, (3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))))
