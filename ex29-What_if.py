@@ -31,3 +31,4 @@ if people == dogs:
 # 3. What happens if it isn't indented?
 # 4. Can you put other Boolean expressions from exercise 27 in the if statement? Try it.
 # 5. What happens if you change the initial values for people, cats, and dogs?
+# 6. What does += mean?
